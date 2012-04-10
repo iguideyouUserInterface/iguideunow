@@ -1,0 +1,35 @@
+<?php
+
+session_start();
+
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TestAjax</title>
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<?
+			displayTop();
+			?>
+			<div id="registerPage">
+				<label for= email>Email:</label>
+				<input type=email required  name="email" id="email" value="Enter email"/>
+				<label for= password>Password1:</label>
+				<input type=password name="pass1" id="pass1"/>
+				<label for= password>Password2:</label>
+				<input type=password name="pass2" id="pass2"/>
+				<input type="hidden" name="formSubmitted" value="1" id="formSubm"/>
+				<input type="submit" value="Sign Up" name="submit" id="submit" />
+				<span id="mailStatus"></span>
+				<span id="ajaxStatus"></span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="ajaxPrototype.js"></script>
+	<script type="text/javascript" src="passwordChecker.js"></script>
+	<script type="text/javascript" src="ajaxPrototype2.js"></script>
+</html>
