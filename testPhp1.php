@@ -1,5 +1,6 @@
 <?php 
-	require_once 'testconect.php';
+	//require_once 'testconect.php';
+	require_once 'databaseconnect.php';
 
 	$newMail = ($_POST["mail2check"]);
 

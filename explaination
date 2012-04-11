@@ -1,5 +1,0 @@
-1. We need to check that the entered email a) is a valid email and b) does not already exist in our db.
-	To do se we gather the mailfield.Value and send it via a ajax (ajaxPrototype.js) call to the php validator testPhp.php
-2. in testPhp we make sure the sent mailvalue contains needed mail propertys. If so we do a sql check to see if we get a returned 
-	sql_num_row. That is a 0 for none found and anything else = the mail exist.
-3. Now that we know that the mail

@@ -1,5 +1,5 @@
 <?php
-require_once 'testconect.php';
+require_once 'databaseconnect.php';
 	
 $daPassw = ($_POST["daPassw"]);
 $daMail = ($_POST["daMail"]);
@@ -45,7 +45,7 @@ if ($daFormSub == '1') {
 			$subject = " iguideunow.com Registration";
 
 			$message = "Welcome to our website!\r\rYou, or someone using your email address, has completed registration at iguideu.com. 
-		You can complete registration by clicking the following link:\rhttp://alvacora.com/iguideunow/activation.php?$activationKey\r\r
+		You can complete registration by clicking the following link:\rhttp://10.1.15.114:8888/iguideunow/activation.php?$activationKey\r\r
 		If this is an error, ignore this email and you will be removed from our mailing list.\r\rRegards,\ iguideu.com Team";
 
 			$headers = 'From: info@iguideunow.com' . "\r\n" . 'Reply-To: noreply@ iguideunow.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
